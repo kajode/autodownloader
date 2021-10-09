@@ -1,4 +1,9 @@
 #!/bin/bash
+
+# IMPORTANT INFO
+# run this script using 'bash run.bash'
+# ! =================== !
+
 echo "(system) checking that sshpass and rsync are installed"
 apt install rsync sshpass
 
