@@ -25,7 +25,7 @@ echo "(system) starting sync. loop"
 while true
 do
     echo "(system) looking for files do download"
-    sshpass -p "$PW" rsync -avp -e "ssh -o StrictHostKeyChecking=no" --remove-source-files $USR@$IP:*.plot $PTH
+    sshpass -p "$PW" rsync -avP -e "ssh -o StrictHostKeyChecking=no" --remove-source-files $USR@$IP:*.plot $PTH
     echo "(system) pausing for 10sec."
     sleep 10
 done
